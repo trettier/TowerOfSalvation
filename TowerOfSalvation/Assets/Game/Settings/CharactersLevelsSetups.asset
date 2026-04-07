@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 982ebc304f70d724e8895255b5e4e789, type: 3}
+  m_Name: CharactersLevelsSetups
+  m_EditorClassIdentifier: 
+  effectsSettings: {fileID: 11400000, guid: bc6bc9e84d30c9741832f6d72cc45b94, type: 2}
+  teleportCharactersQuantity: 3
+  humanLevelSetups:
+  - level: 0
+    effectsQuantity: 5
+    speed: 10
+    healthPoints:
+      current: 8
+      max: 8
+    stamina:
+      current: 5
+      max: 5
+      regeneration: 1
+    prefabs:
+    - {fileID: 7977062607578607577, guid: 9e197ed5b1aac69448cee95a7a13882f, type: 3}
+    - {fileID: 7977062607578607577, guid: abddac6b11cc38646b15ef3ab5105ca0, type: 3}
+    - {fileID: 7977062607578607577, guid: cf02158a221801841a84a452255e626e, type: 3}
+    - {fileID: 7977062607578607577, guid: 4fd7810c91aa5f24285f8d99650dd536, type: 3}
+  zombyLevelSetups:
+  - level: 0
+    effectsQuantity: 15
+    speed: 7
+    healthPoints:
+      current: 4
+      max: 4
+    stamina:
+      current: 2
+      max: 2
+      regeneration: 2
+    prefabs:
+    - {fileID: 7977062607578607577, guid: 5a2e935af499df7428e21bc5ecf3c0a4, type: 3}
+    - {fileID: 7977062607578607577, guid: 5ff25e422c5c8594cb43ce0a47f9ccba, type: 3}

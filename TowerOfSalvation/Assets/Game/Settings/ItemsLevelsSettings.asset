@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1077677fe994dc743817adadace8e788, type: 3}
+  m_Name: ItemsLevelsSettings
+  m_EditorClassIdentifier: 
+  effectsSettings: {fileID: 11400000, guid: bc6bc9e84d30c9741832f6d72cc45b94, type: 2}
+  humansLevelSetups:
+  - level: 0
+    effectsQuantity: 2
+    damage:
+      value: 1
+      increment: 0
+      crit:
+        chance: 0.1
+        multiplier: 2
+      knockback:
+        value: 150
+    prefabs:
+    - {fileID: 8427389360342889597, guid: 31de84762b077e14cb9cc55b53a2b79a, type: 3}
+    - {fileID: 8427389360342889597, guid: b17d30ce0dc06bc48954c088d534966c, type: 3}
+    - {fileID: 8427389360342889597, guid: 6f1792aeaf7337d4cb86f1d344fab392, type: 3}
+  zompiesLevelSetups:
+  - level: 0
+    effectsQuantity: 0
+    damage:
+      value: 1
+      increment: 0
+      crit:
+        chance: 0.1
+        multiplier: 2
+      knockback:
+        value: 150
+    prefabs:
+    - {fileID: 8427389360342889597, guid: f58195a069616664ea331ad514029c60, type: 3}

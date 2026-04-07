@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bcf072f090cbf44be096c2eb2e9362, type: 3}
+  m_Name: EffectsSettings
+  m_EditorClassIdentifier: 
+  characterEffects:
+  - rid: 4164034551716511834
+  itemEffects:
+  - rid: 4164034551716511835
+  - rid: 4164034551716511836
+  references:
+    version: 2
+    RefIds:
+    - rid: 4164034551716511834
+      type: {class: BasicHealthUpgrade, ns: , asm: Assembly-CSharp}
+      data:
+        level: 0
+        name: 
+        description: 
+        duration:
+          full: 0
+          remaining: 0
+          interval: 0
+          permanent: 1
+        value: 1
+        view: {fileID: 0}
+        model:
+          speed: 0
+          healthPoints:
+            current: 0
+            max: 0
+          stamina:
+            current: 0
+            max: 0
+            regeneration: 0
+          itemSlot:
+            item:
+              icon: {fileID: 0}
+              prefab: {fileID: 0}
+          side:
+            name: 
+          prefab: {fileID: 0}
+    - rid: 4164034551716511835
+      type: {class: BasicDamageUpgrade, ns: , asm: Assembly-CSharp}
+      data:
+        level: 0
+        name: 
+        description: 
+        duration:
+          full: 0
+          remaining: 0
+          interval: 0
+          permanent: 1
+        value: 1
+        view: {fileID: 0}
+        model:
+          icon: {fileID: 0}
+          prefab: {fileID: 0}
+          damage:
+            value: 0
+            increment: 0
+            crit:
+              chance: 0
+              multiplier: 0
+            knockback:
+              value: 0
+    - rid: 4164034551716511836
+      type: {class: BasicIncrementUpgrade, ns: , asm: Assembly-CSharp}
+      data:
+        level: 0
+        name: 
+        description: 
+        duration:
+          full: 0
+          remaining: 0
+          interval: 0
+          permanent: 1
+        value: 1
+        view: {fileID: 0}
+        model:
+          icon: {fileID: 0}
+          prefab: {fileID: 0}
+          damage:
+            value: 0
+            increment: 0
+            crit:
+              chance: 0
+              multiplier: 0
+            knockback:
+              value: 0
