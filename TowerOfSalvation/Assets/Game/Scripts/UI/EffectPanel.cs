@@ -17,9 +17,9 @@ public class EffectPanel : MonoBehaviour, IPointerExitHandler
     {
         this.effect = effect;
 
-        icon.sprite = this.effect.icon;
-        label.text = this.effect.name;
-        description.text = this.effect.description;
+        //icon.sprite = this.effect.icon;
+        //label.text = this.effect.name;
+        //description.text = this.effect.description;
     }
 
     public void OnPointerExit(PointerEventData eventData)

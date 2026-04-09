@@ -1,14 +1,26 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameData
+public class GameData : MonoBehaviour
 {
+    public static List<EffectData> effectsData;
+
+    public List<Type> effectsInstances = new()
+    {
+        typeof(BasicHealthUpgrade),
+        typeof(BasicDamageUpgrade),
+        typeof(BasicIncrementUpgrade)
+    };
+
+
+    public Dictionary<Type, EffectData> effects = new();
+
     public static int GetCurrentDay()
     {
         return PlayerPrefs.GetInt("CurrentDay", 0);
     }
 
-    [HideInInspector]
     public List<ZoneData> charactersZones = new List<ZoneData>();
 
     public UnityEngine.Resources resources = new UnityEngine.Resources();

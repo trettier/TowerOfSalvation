@@ -69,12 +69,12 @@ public class CharacterLevelSetup
             speed,
             new HealthPoints(healthPoints.max),
             new Stamina(stamina.max),
-            new List<CharacterEffect>()
+            new List<EffectData>()
             );
 
         for (int i = 0; i < effectsQuantity; i++) 
         {
-            newModel.effectsData.Add(effectsSettings.GetRandomCharacterEffect());
+            newModel.effectsData.Add(G.instance.effectsService.GetRandomCharacterEffect());
         }
 
         return newModel;

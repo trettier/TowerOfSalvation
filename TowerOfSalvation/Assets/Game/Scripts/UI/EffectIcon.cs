@@ -13,7 +13,7 @@ public class EffectIcon : MonoBehaviour, IPointerEnterHandler
     {
         _effect = effect;
 
-        icon.sprite = _effect.icon;
+        //icon.sprite = _effect.icon;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

@@ -6,7 +6,7 @@ public class CharacterEffectManager
 {
     private List<CharacterEffect> _effects;
 
-    public void Initialize(List<CharacterEffect> effects, CharacterPresenter character)
+    public void Initialize(List<EffectData> effects, CharacterPresenter character)
     {
         _effects = effects;
 

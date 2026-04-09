@@ -11,7 +11,7 @@ public class ItemModel
     //public string description;
     public Sprite icon;
     [HideInInspector] public GameObject prefab;
-    [HideInInspector] public List<WeaponEffect> effectsData;
+    [HideInInspector] public List<EffectData> effectsData;
 }
 
 [Serializable]

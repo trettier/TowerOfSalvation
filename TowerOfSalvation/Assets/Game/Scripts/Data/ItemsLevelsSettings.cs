@@ -78,11 +78,11 @@ public class WeaponLevelSetup
             prefabs[randomPrefab]
             );
         
-        newModel.effectsData = new List<WeaponEffect>();
+        newModel.effectsData = new List<EffectData>();
 
         for (int i = 0; i < effectsQuantity; i++)
         {
-            newModel.effectsData.Add(effectsSettings.GetRandomItemEffect());
+            newModel.effectsData.Add(G.instance.effectsService.GetRandomItemEffect());
         }
 
         return newModel;

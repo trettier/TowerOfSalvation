@@ -6,9 +6,9 @@ public class Bullet : Projectile
     public Transform shadow;
 
 
-    public override void Initilize(ProjectileModel model, Vector3 direction, Vector3 offset, ItemView owner)
+    public override void Initialize(ProjectileModel model, Vector3 direction, Vector3 offset, ItemView owner)
     {
-        base.Initilize(model, direction, offset, owner);
+        base.Initialize(model, direction, offset, owner);
 
         animator.Play("shot");
 

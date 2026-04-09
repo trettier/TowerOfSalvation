@@ -15,6 +15,7 @@ public class G : Singleton<G>
     public ItemsLevelsSettings itemsLevelsSettings;
     public SidesSettings sidesSettings;
     public EffectsSettings effectsSettings;
+    public EffectsService effectsService;
     public Damage damage;
     public EntityFactory entityFactory;
     public UIFactory uiFactory;

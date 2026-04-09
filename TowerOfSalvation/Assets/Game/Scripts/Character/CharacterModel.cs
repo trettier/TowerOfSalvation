@@ -14,12 +14,12 @@ public class CharacterModel
     public Stamina stamina;
     public Level level;
 
-    [HideInInspector] public List<CharacterEffect> effectsData;
+    [HideInInspector] public List<EffectData> effectsData;
     [HideInInspector] public ItemSlot itemSlot;
     [HideInInspector] public Side side;
     [HideInInspector] public GameObject prefab;
 
-    public CharacterModel(GameObject prefab, Side side, float speed, HealthPoints healthPoints, Stamina stamina, List<CharacterEffect> effectData)
+    public CharacterModel(GameObject prefab, Side side, float speed, HealthPoints healthPoints, Stamina stamina, List<EffectData> effectData)
     {
         id = new ID();
         this.prefab = prefab;

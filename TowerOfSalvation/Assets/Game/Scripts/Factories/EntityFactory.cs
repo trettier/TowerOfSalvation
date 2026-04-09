@@ -1,7 +1,12 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EntityFactory : Singleton<EntityFactory>
 {
+    public GameObject expiriencePrefab;
+
     public CharacterView CreateCharacter(CharacterModel model, CharactersZone zone, Vector3 position = default)
     {
         CharacterView view = Instantiate(model.prefab).GetComponent<CharacterView>();
@@ -32,9 +37,18 @@ public class EntityFactory : Singleton<EntityFactory>
     {
         Quaternion angle = Quaternion.identity; // should be gotten from direction
         Projectile projectile = Instantiate(model.prefab, position, angle).GetComponent<Projectile>();
-        projectile.Initilize(model, direction, offset, owner);
+        projectile.Initialize(model, direction, offset, owner);
 
         return projectile;
     }
 
+    public void CreateDrop(DropType type, int quantity, Vector3 position)
+    {
+        for (int i = 0; i < quantity; i++)
+        {
+            Drop projectile = Instantiate(expiriencePrefab, position, Quaternion.identity).GetComponent<Drop>();
+            Vector2 direction = new Vector2(Random.Range(0, 1), Random.Range(0, 1)).normalized;
+            projectile.Initialize(DropType.expirience, direction);
+        }
+    }
 }

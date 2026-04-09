@@ -28,6 +28,11 @@ public class CharacterPanel : MonoBehaviour, IPointerExitHandler
         {
             _levelUpButton.gameObject.SetActive(true);
         }
+        else
+        {
+            _levelUpButton.gameObject.SetActive(false);
+
+        }
 
         //_levelUpButton.clicked += UpgradeLevel;
     }

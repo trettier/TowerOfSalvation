@@ -13,7 +13,7 @@ public abstract class Projectile : MonoBehaviour
 
     public ItemView _owner;
 
-    public virtual void Initilize(ProjectileModel model, Vector3 direction, Vector3 offset, ItemView owner)
+    public virtual void Initialize(ProjectileModel model, Vector3 direction, Vector3 offset, ItemView owner)
     {
         this.model = model;
         this._direction = direction;

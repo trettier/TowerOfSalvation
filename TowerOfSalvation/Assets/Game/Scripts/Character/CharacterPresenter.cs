@@ -49,7 +49,7 @@ public class CharacterPresenter
         currentState.FixedUpdate();
     }
 
-    public void GetExpirience(float value)
+    public void IncreaseExpirience(float value)
     {
         Debug.Log(value);
         model.level.expirience.Increase(value);
@@ -57,9 +57,9 @@ public class CharacterPresenter
 
     public void LevelUp()
     {
-        var effect1 = G.instance.effectsSettings.GetRandomCharacterEffect();
-        var effect2 = G.instance.effectsSettings.GetRandomCharacterEffect();
-        var effect3 = G.instance.effectsSettings.GetRandomCharacterEffect();
+        var effect1 = G.instance.effectsService.GetRandomCharacterEffect();
+        var effect2 = G.instance.effectsService.GetRandomCharacterEffect();
+        var effect3 = G.instance.effectsService.GetRandomCharacterEffect();
 
         G.instance.uiFactory.CreateCharacterLevelUpChoice(this, effect3, effect2, effect1);
     }
@@ -69,7 +69,7 @@ public class CharacterPresenter
         model.healthPoints.RecieveDamage(damage);
         view.RecieveDamage();
         if (model.healthPoints.current == 0)
-            source.GetExpirience(model.level.value + 2);
+            source.IncreaseExpirience(model.level.value + 2);
     }
 
     public void RecieveKnockback(Vector3 knockback)

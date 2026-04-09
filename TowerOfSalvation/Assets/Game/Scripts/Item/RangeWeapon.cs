@@ -22,7 +22,7 @@ public class RangeWeapon : ItemView
         float radians = angle * Mathf.Deg2Rad;
         Vector3 direction = new Vector3(Mathf.Cos(radians) * transform.parent.localScale.x, Mathf.Sin(radians) * transform.parent.localScale.x, 0);
 
-        bullet.Initilize(
+        bullet.Initialize(
             new ProjectileModel(
                 presenter.owner.side,
                 1,
